@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @Component(
+        immediate = true,
         property = { "alias=/servlet-example", "servlet-name=Example"}
 )
 public class ExampleServlet extends HttpServlet implements Servlet {
